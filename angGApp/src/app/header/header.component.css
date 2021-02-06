@@ -1,0 +1,14 @@
+.header{
+  height:70px;
+  background-image: radial-gradient(104.59% 3658.41% at 50% 30.71%, rgba(255, 255, 255, 0) 0%, rgba(114, 114, 114, 0.12) 0%);
+  background: #0e2d3b;
+}
+
+.header-icon{
+  color:#fff;
+}
+
+.header-right {
+  flex: 1 1 auto;
+}
+

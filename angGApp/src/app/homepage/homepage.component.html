@@ -1,0 +1,59 @@
+<div class="homepage">
+  <div class="container" fxLayout="column" fxLayoutAlign="start start">
+    <!-- <div> -->
+    <h2>
+      A platform with no <i style="font-family: Playfair Display">fees</i>
+    </h2>
+    <span>Because we care about you</span>
+
+    <div class="buttonContainer">
+      <div>
+        <p>*Available to eligible charities</p>
+        <button mat-button class="button_left">Start A Campaign</button>
+      </div>
+      <button mat-button class="button_right">Explore</button>
+    </div>
+    <!-- </div> -->
+  </div>
+</div>
+
+<div class="campaign-page">
+  <div class="campaign-container">
+    <h1>Urgent fundraising Campaigns</h1>
+  </div>
+  <div layout="row" class="scroll-container">
+    <div *ngFor="let card of cardItems">
+      <mat-card class="card-item">
+        <img
+          mat-card-image
+          src="{{ card.imageUrl }}"
+          alt="Photo of a Shiba Inu"
+          class="card-image"
+        />
+        <mat-card-content>
+          <h3>{{ card.name }}</h3>
+          <p class="sub-title">Help them raise the fund for good reasons</p>
+          <h4><strong>£1246.72 raised</strong></h4>
+          <section class="example-section">
+            <mat-progress-bar
+              class="example-margin"
+              [mode]="mode"
+              [value]="value"
+              [bufferValue]="bufferValue"
+              style="height: 11px"
+            >
+            </mat-progress-bar>
+
+            <div style="display: flex; margin-top: 20px">
+              <button mat-button class="button_card_left">Donate</button>
+              <button mat-button class="button_card_right">Share</button>
+            </div>
+          </section>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="center start">
+    <button mat-button class="start_Campaign">Start A Campaign</button>
+  </div>
+</div>
